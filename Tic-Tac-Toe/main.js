@@ -27,6 +27,7 @@ document.querySelector(".new-game").addEventListener("click", () => {
   arrowClassList.remove(arrowClassLists[player % 2]);
   arrowClassList.add(arrowClassLists[0]);
   player = 0;
+  end = false;
   document.querySelectorAll(".box").forEach((box) => {
     if (box.childNodes.length != 0) {
       box.removeChild(box.childNodes[0]);
