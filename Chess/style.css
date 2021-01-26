@@ -1,0 +1,77 @@
+/* Global background */
+body {
+  background-color: dodgerblue;
+}
+
+/* Heading on top of page */
+.heading > h1 {
+  color: white;
+  text-align: center;
+  font-size: 4em;
+  text-decoration: underline;
+  text-decoration-color: white;
+  margin-top: 5px;
+  margin-bottom: 1.3em;
+}
+
+/* Rest of page */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* New game button and text on it */
+.new-game {
+  border-radius: 50%;
+  width: 30em;
+  height: 10em;
+  margin: 20em auto;
+  background-color: indigo;
+}
+
+.new-game > h1 {
+  color: white;
+  font-size: 4em;
+  margin-top: 27px;
+}
+
+/* The turn indicator at the right of the page */
+.turn-indicator-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+/* The ovals which represent each player */
+.turn-indicator-grid > .turn-indicator {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.turn-indicator-grid > .turn-indicator > div {
+  border-radius: 50%;
+  width: 28em;
+  height: 10em;
+  margin: auto;
+}
+
+/* Text telling the users which player each oval represents */
+.black > h1,
+.white > h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  font-size: 70px;
+}
+
+.white > h1 {
+  margin-top: 35px;
+}
+
+/* Arrow pointing to which player has to move */
+.arrow-top {
+  margin-top: 9em;
+}
+
+.arrow-bottom {
+  margin-top: 30em;
+}
