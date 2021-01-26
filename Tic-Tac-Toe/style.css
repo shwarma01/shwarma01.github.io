@@ -1,0 +1,74 @@
+body {
+  background-color: #5f00b2;
+}
+
+h1 {
+  font-family: "Rockwell", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 97px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.new-game {
+  width: 19vw;
+  height: 11vh;
+  border-radius: 50%;
+  background-color: #4c00ff;
+  margin: auto;
+}
+
+.new-game > h1 {
+  font-size: 59px;
+  margin-top: 10px;
+}
+
+.board {
+  width: 36vw;
+  height: 64vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+  position: relative;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* For when a "X" or "O" is added to the board */
+.box > h1 {
+  position: absolute;
+  top: -40px;
+  left: 65px;
+}
+
+.turn-indicator-grid {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.turn-indicator {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.turn-indicator > div {
+  width: 19vw;
+  height: 11vh;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.arrow-top {
+  margin-top: 7.5em;
+}
+
+.arrow-bot {
+  margin-top: 26.5em;
+}
