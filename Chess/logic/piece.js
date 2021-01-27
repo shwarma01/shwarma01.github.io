@@ -1,15 +1,24 @@
 class Piece {
-  constructor(side, position) {
+  constructor(side, position, dir) {
     this._side = side;
     this._position = position;
-    console.log("Sup");
+    this._img = document.createElement("img");
+    this._img.src = dir;
   }
 
-  get side() {
+  getSide() {
     return this._side;
   }
 
-  get position() {
+  getPosition() {
     return this._position;
+  }
+
+  getImg() {
+    return this._img;
+  }
+
+  setPosition(position) {
+    this._position = position;
   }
 }

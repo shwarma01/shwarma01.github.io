@@ -35,6 +35,55 @@ body {
   margin-top: 27px;
 }
 
+/* Board */
+.board {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.row:nth-child(odd) > .col:nth-child(odd) {
+  background-color: black;
+}
+
+.row:nth-child(odd) > .col:nth-child(even) {
+  background-color: white;
+}
+
+.row:nth-child(even) > .col:nth-child(even) {
+  background-color: black;
+}
+
+.row:nth-child(even) > .col:nth-child(odd) {
+  background-color: white;
+}
+
+.col:hover {
+  opacity: 0.5;
+}
+
+.click-on-piece {
+  border: 5px yellow solid;
+}
+
+.valid-move-space {
+  border: 0px;
+  background-color: orangered !important;
+  opacity: 0.5;
+}
+
+.row > .col > img {
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  width: 60px;
+  height: 70px;
+}
+
 /* The turn indicator at the right of the page */
 .turn-indicator-grid {
   display: grid;
@@ -44,6 +93,7 @@ body {
 /* The ovals which represent each player */
 .turn-indicator-grid > .turn-indicator {
   display: grid;
+  margin-left: 70px;
   grid-template-rows: 1fr 1fr;
 }
 
